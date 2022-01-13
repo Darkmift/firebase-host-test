@@ -1,0 +1,15 @@
+.app-main {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #ccc;
+  padding: 1vmin;
+  text-transform: capitalize;
+}
