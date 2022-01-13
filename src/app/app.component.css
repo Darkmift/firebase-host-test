@@ -13,3 +13,9 @@
   padding: 1vmin;
   text-transform: capitalize;
 }
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin 0;
+}

@@ -1,5 +1,15 @@
 <main class="app-main">
   <div class="content">
     <h1>{{ title }}</h1>
+    <div class="input-group">
+      <label for="fileUpload">Upload File</label>
+      <input type="file" #myInput (change)="onfileSelected($event)" />
+    </div>
+    <button (click)="uploadFile()">Add File</button>
+    <ul *ngIf="fileList.length">
+      <li *ngFor="let filePath of fileList; index as i">
+        {{ i }} - {{ filePath }}
+      </li>
+    </ul>
   </div>
 </main>
